@@ -32,6 +32,9 @@ $ npm install # Install dependencies
 $ npm start # Start React app
 ```
 
+## How can I access the App
+The app is deployed in Vercel. You can access it using the following [link](https://course-management-test.vercel.app/).
+
 # Limitations
 - As mentioned above, combining the two hooks useReducer and useContext can be beneficial when we want to implemented complex logic simply, but it is not good performance-wise(each change of state forces a re-render of nearly the entire app). We must resort to other methods such as using other React State Management libraries like the well-renowned Redux.
 - The application is still not entirely made with mobile-first responsive design approach. This is largely due to time constraints.
