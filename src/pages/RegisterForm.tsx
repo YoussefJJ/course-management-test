@@ -57,7 +57,7 @@ function RegisterForm() {
             <Input onChange={handleChange} label='password' type='date' placeholder='Enter Birth Date' name='birthDate'>Birth Date</Input>
             <Radio onChange={handleChange} id='student' name='role' value='student'>Student</Radio>
             <Radio onChange={handleChange} id='instructor' name='role' value='instructor'>Instructor</Radio>
-            <Submit onSubmit={handleSubmit}>Login</Submit>
+            <Submit onSubmit={handleSubmit}>Create Account</Submit>
         </Container>
     </Form>
   )
