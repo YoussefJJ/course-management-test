@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is part of a technical test. It is a course management app created with React (Create React App with TypeScript) and using Bootstrap as CSS framework.
+# What is the app?
 
-## Available Scripts
+As mentioned above, this is a course management demo app. It allows creations of users (either students or instructors) to consult their courses. Instructors - and only instructors - can add, edit or delete courses. A course is defined by its: name, description, category, subject, start/end date and number of students. Any user that registers to this app can consult courses. 
 
-In the project directory, you can run:
+To register you must go to the registration form and enter your information which consists of: First name, last name, nickname, password and role (student or instructor).
 
-### `npm start`
+## Dependencies
+The project is made with several dependencies installed:
+- React
+- Bootstrap
+- React Router DOM (for routing)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Main functionalities
+The application provide the following functionalities:
+- Authentication (Register/Login and Logout)
+- Add courses (for instructors)
+- Consult courses (for both students and instructors)
+- Search course by name (for both students and instructors)
+- Search course by timeframe (for both students and instructors): if the timeframe is invalid or there were no results, it will display all courses by default.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How the app works
+for storing data (users and courses), I implemented a logic by combining two useful hooks: useReducer and useContext together to perform both read and write functions. This way I could achieve keeping up a general state of the app without the use of a database.
+## How to run the app
+To run the app, type the following commands
+```console
+$ git clone https://github.com/youssefjj/course-management-test.git # Clone repo
+$ cd course-management-test # Access workdir
+$ npm install # Install dependencies
+$ npm start # Start React app
+```
 
-### `npm test`
+# Limitations
+- As mentioned above, combining the two hooks useReducer and useContext can be beneficial when we want to implemented complex logic simply, but it is not good performance-wise(each change of state forces a re-render of nearly the entire app). We must resort to other methods such as using other React State Management libraries like the well-renowned Redux.
+- The application is still not entirely made with mobile-first responsive design approach. This is largely due to time constraints.
+- Validation for forms is still lackluster. Messages should be shown below every field in case of error. I only did validation on submission with an alert message for required fields.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
