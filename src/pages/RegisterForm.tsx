@@ -6,7 +6,7 @@ import Input from '../components/Form/Input'
 import Radio from '../components/Form/Radio'
 import Submit from '../components/Form/Submit'
 import Title from '../components/Form/Title'
-import { AppContext } from '../contexts/userContext'
+import { AppContext } from '../contexts/AppContext'
 import { validateForm } from '../util/utils'
 
 function RegisterForm() {

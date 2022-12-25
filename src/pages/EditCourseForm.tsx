@@ -5,7 +5,7 @@ import Form from '../components/Form/Form'
 import Input from '../components/Form/Input'
 import Submit from '../components/Form/Submit'
 import Title from '../components/Form/Title'
-import { AppContext } from '../contexts/userContext'
+import { AppContext } from '../contexts/AppContext'
 import { validateDate, validateForm } from '../util/utils'
 
 function EditCourseForm() {

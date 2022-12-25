@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { AppContext } from '../../contexts/userContext';
+import { AppContext } from '../../contexts/AppContext';
 
 interface CourseItemProps {
     id: number;

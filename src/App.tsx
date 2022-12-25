@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import Layout from './pages/Layout';
 import LoginForm from './pages/LoginForm';
 import RegisterForm from './pages/RegisterForm';
-import { AppContext, Provider } from './contexts/userContext';
+import { AppContext, Provider } from './contexts/AppContext';
 import Courses from './pages/Courses';
 import AddCourseForm from './pages/AddCourseForm';
 import EditCourseForm from './pages/EditCourseForm';

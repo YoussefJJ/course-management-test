@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import DateRangePicker from '../components/Course/DateRangePicker'
 import List from '../components/Course/List'
 import SearchBar from '../components/Course/SearchBar'
-import { AppContext } from '../contexts/userContext'
+import { AppContext } from '../contexts/AppContext'
 
 function Courses() {
   const { courses, currentUser } = useContext(AppContext)
