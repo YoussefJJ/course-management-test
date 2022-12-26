@@ -22,9 +22,9 @@ The application provide the following functionalities:
 - Search course by timeframe (for both students and instructors): if the timeframe is invalid or there were no results, it will display all courses by default.
 
 ## How the app works
-for storing data (users and courses), I implemented a logic by combining two useful hooks: useReducer and useContext together to perform both read and write functions. This way I could achieve keeping up a general state of the app without the use of a database.
+for storing data (users and courses), I implemented a logic by combining two useful hooks: useReducer and useContext together to perform both read and write functions. This way I could achieve keeping up a general state of the app without the use of a database. To persist the data (When refreshing the page), I uses the localStorage provided by the browser to store data in the form of a JSON string and from there I can parse it back to usable JavaScript Objects.
 ## How to run the app
-To run the app, type the following commands
+To run the app, type the following commands.
 ```console
 $ git clone https://github.com/youssefjj/course-management-test.git # Clone repo
 $ cd course-management-test # Access workdir
